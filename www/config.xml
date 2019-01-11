@@ -10,8 +10,7 @@
      <allow-navigation href="*" />
 <allow-intent href="*" />
 <access origin="*" />
-    <allow-intent href="http://*/*" />
-    <allow-intent href="https://*/*" />
+    <allow-intent href="http://yourwebsite.com/*" />
     <platform name="android">
         <allow-intent href="market:*" />
     </platform>
@@ -23,10 +22,16 @@
     <preference name="DisallowOverscroll" value="true" />
     <preference name="AutoHideSplashScreen" value="true" />
     <preference name="SplashScreenDelay" value="¨5000" />
+    <preference name="SplashMaintainAspectRatio"  value="false" />
+    <preference name="FadeSplashScreen"           value="true"/>
 
     <!-- Uncomment to use the latest, fastest iOS WebView (see this post http://devgirl.org/2016/01/11/a-faster-hybrid-app-for-the-new-year/) -->
     <plugin name="cordova-plugin-wkwebview-engine" spec="~1.0.1"/>
     <plugin name="cordova-plugin-whitelist" version="1"/>
+        <plugin name="cordova-plugin-inappbrowser" />
+    <plugin name="cordova-plugin-whitelist" />
+    <plugin name="cordova-plugin-splashscreen" />
+    <plugin name="cordova-plugin-device" />
 
     <platform name="android">
         <icon src="icon.png" />
